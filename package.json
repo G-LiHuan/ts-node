@@ -1,0 +1,19 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GBeckLi/ts-node.git",
+  "author": "李欢 <li.huan@synyi.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/tsc && node index"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^11.13.4",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
