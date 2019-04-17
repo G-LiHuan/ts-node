@@ -1,11 +1,10 @@
-import { NodeModuleTester } from './src/utils/util';
+import app from './src/App';
 
-function main() {
-  const tester = new NodeModuleTester('s1', 1);
+const PORT = process.env.port || 3000;
 
-  console.log(NodeModuleTester.STATIC_VAR);
-
-  console.log(NodeModuleTester.testPath());
-
-}
-main();
+app.listen(PORT, err => {
+  if (err) {
+    return console.error(err);
+  }
+  return console.log(`Server is listening on ${PORT}`);
+});

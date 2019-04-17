@@ -9,11 +9,13 @@
     "start": "./node_modules/.bin/tsc && node index"
   },
   "devDependencies": {
+    "@types/express": "^4.16.1",
     "@types/lodash": "^4.14.123",
     "@types/node": "^11.13.4",
     "typescript": "^3.4.3"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "lodash": "^4.17.11"
   }
 }
