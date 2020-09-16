@@ -1,0 +1,35 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GBeckLi/ts-node.git",
+  "author": "gbeck.li <gbeck.lee@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:or": "./node_modules/.bin/tsc && node ",
+    "start": "./node_modules/.bin/ts-node index.ts",
+    "test": "jest index",
+    "test:watch": "jest --watch",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js & node dist/index.js",
+    "watch": "./node_modules/.bin/webpack --config webpack.config.js --watch"
+  },
+  "dependencies": {
+    "@types/argv": "0.0.4",
+    "@types/lodash": "^4.14.133",
+    "@types/node": "^11.13.4",
+    "argv": "0.0.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "clean-webpack-plugin": "^3.0.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "ts-loader": "^6.0.2",
+    "ts-node": "^9.0.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
